@@ -1,5 +1,5 @@
 function isValidRange(x, y) {
-    return x < y
+    return x < y && x >= 1;
 }
 
 function printMultiplicationTableAtRange(x, y) {
