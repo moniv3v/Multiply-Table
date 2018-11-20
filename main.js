@@ -4,7 +4,17 @@ function isValidRange(x, y) {
 
 function printMultiplicationTableAtRange(x, y) {
     if (isValidRange(x, y)) {
+        var result = "";
+        for (var i = x; i <= y; i++) {
+            for (var j = x; j <= i; j++) {
+                result = result+(j+"*"+i+"="+(i*j));
+            }
+            result= result+"\n";
+        }
+        console.log(result);
+        return result;
     }
+
     return null;
 }
 
